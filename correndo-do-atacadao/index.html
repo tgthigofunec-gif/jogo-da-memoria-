@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correndo do Atacadão | Funec Riacho</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
+  </head>
+  <body>
+    <main class="game">
+      <h1 class="title">Correndo do Atacadão</h1>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">Tempo</span>
+          <span class="stat-value" id="timer">00:00</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Pares</span>
+          <span class="stat-value" id="pairs">0/8</span>
+        </div>
+        <button class="restart" id="restart" type="button">Reiniciar</button>
+      </div>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-1.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-6.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-3.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-2.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-1.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-5.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-2.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-6.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-3.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-4.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-5.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-4.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-7.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-8.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-7.png" alt="carta">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/img/w.svg" alt="ícone">
+          </div>
+          <div class="view back-view">
+            <img src="assets/img/img-8.png" alt="carta">
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-labelledby="modal-title">
+        <h2 id="modal-title">Parabéns!</h2>
+        <p id="modal-message"></p>
+        <p class="modal-time">Seu tempo: <strong id="final-time">00:00</strong></p>
+        <p class="modal-best" id="best-time"></p>
+        <button class="restart" id="play-again" type="button">Jogar de novo</button>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js?v=3"></script>
+  </body>
+</html>
